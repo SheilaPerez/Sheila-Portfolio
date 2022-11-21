@@ -1,0 +1,122 @@
+.contactContent {
+    background-color: rgba(111, 220, 191, 0.9);
+    padding: 60px 60px;
+    min-height: 100vh;
+}
+
+.contactTitle {
+    font-family: 'Poller One', cursive;
+    color: hsl(0, 4%, 21%);
+    font-size: 43px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.containerFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.adressContact {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+.linkedin {
+    background-image: url('../../../public/Contact/linkedin.png');
+}
+
+.email {
+    background-image: url('../../../public/Contact/email-marketing.png');
+}
+
+.icons {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 17px;
+}
+
+.iconStyle {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    margin: 20px;
+}
+
+.iconDescriptionContent {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.girlContainer {
+    position: relative;
+    margin: 0 auto;
+}
+
+.girlImage {
+    background-image: url('../../../public/Contact/girl2.png');
+    background-size: cover;
+    width: 270px;
+    height: 270px;
+    z-index: 2;
+    margin-top: 30px;
+    position: relative;
+}
+
+.whiteDiv {
+    background-image: url('../../../public/Contact/white.png');
+    height: 260px;
+    width: 305px;
+    position: absolute;
+    background-size: cover;
+    right: -16px;
+    transform: rotate(-25deg);
+    bottom: -3px;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 800px) {
+    .infoContainer {
+        margin-top: 94px;
+        flex-direction: row;
+        margin-left: 23px;
+    }
+    .icons {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .contactContent {
+        padding: 60px 80px;
+    }
+    .icons {
+        margin-left: 97px;
+    }
+    .girlImage {
+        width: 310px;
+        height: 320px; 
+    }
+    .whiteDiv {
+        height: 290px;
+        width: 345px; 
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .icons {
+        margin-left: 207px;
+    }
+}

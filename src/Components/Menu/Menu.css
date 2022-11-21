@@ -1,0 +1,75 @@
+.menuContent {
+    background-color: #BA94D1;
+    height: 70px;
+    border-top: 3px solid hsl(0, 4%, 21%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+
+}
+
+.link {
+    font-family: 'Poor Story', cursive;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+        to right,
+        hsl(55, 97%, 85%),
+        hsl(55, 97%, 85%) 50%,
+        hsl(0, 4%, 21%) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.link:before{
+    display:block;
+    content:'';
+    width:0;
+    height:3px;
+    bottom:5px;
+    left:0;
+    bottom:-3px;
+    z-index:0;
+    position:absolute;
+    background:hsl(55, 97%, 85%);
+    transition: all 0.3s ease-in-out;
+}
+.link:hover {
+    background-position: 0%;
+}
+
+.link:hover::before{
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .menuContent {
+        background-color: hsl(210, 4%, 98%);
+    }
+    .link{
+        background-image: linear-gradient(
+            to right,
+            rgba(111, 220, 191, 0.9),
+            rgba(111, 220, 191, 0.9) 50%,
+            hsl(0, 4%, 21%) 50%);
+    }
+    
+}

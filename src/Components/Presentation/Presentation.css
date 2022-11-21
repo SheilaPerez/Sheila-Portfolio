@@ -1,0 +1,216 @@
+.presentationContent {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: hsl(210, 4%, 98%);
+    min-height: 100vh;
+    justify-content: flex-end;
+}
+
+.photoContainer {
+    position: relative;
+    height: 200px;
+    margin-bottom: 35px;
+}
+
+.photoMarc {
+    border-radius: 10px;
+    border: 5px dashed hsl(264, 51%, 71%);
+    width: 209px;
+    height: 197px;
+    background-color: transparent;
+    animation: clippath 3s infinite linear;
+    position: absolute;
+    top: 13px;
+    left: 60px;
+}
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+.imageHover {
+    background-image: url('../../../public/sheila.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 167px;
+    height: 147px;
+    border-radius: 20px;
+    border: 8px solid hsl(264, 51%, 71%);
+    position: absolute;
+    top: 35px;
+    left: 77px;
+}
+
+.name {
+    font-family: 'Caveat', cursive;
+    color: hsl(264, 51%, 71%);
+    font-size: 30px;
+    cursor: pointer;
+    transform: rotate(-9deg);
+    width: 140px;
+}
+.name:hover {
+    animation: MoveUpDown 1s linear infinite;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+      transform: rotate(-9deg);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+}
+
+.description {
+    font-family: 'Poller One', cursive;
+    font-size: 37px;
+    letter-spacing: 2.5px;
+    color: hsl(0, 4%, 21%);
+    margin-bottom: 10px;
+}
+
+.descriptionContainer {
+    margin-bottom: 265px;
+
+}
+
+.borderLetter {
+    -webkit-text-stroke: 0.5px hsl(0, 4%, 21%);
+    color: transparent; 
+    cursor: pointer;
+}
+
+.confetti {
+    background-image: url('../../../public/confetti.png');
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 235px;
+    animation: 2s ease 0s normal forwards 1 fadein;
+}
+
+.doubleConfetti {
+    background-image: url('../../../public/confetti.png');
+    background-size: contain;
+    width: 80px;
+    height: 76px;
+    position: absolute;
+    left: -260px;
+    bottom: 10px;
+    animation: 2s ease 0s normal forwards 1 fadein;
+}
+@keyframes fadein{
+    0% { opacity:0; 
+        transform: scale(0.5);
+    }
+
+    100% { opacity:1; 
+        transform: scale(1.2);
+    }
+}
+
+.titleWord {
+    animation: color-animation 4s linear infinite;
+}
+
+.titleWord2 {
+    --color-1: #FF8DC7;
+    --color-2: #FFC090;
+    --color-3: #7743DB;
+}
+
+.titleWord3 {
+    --color-1: #42ff4f;
+    --color-2: #319DA0;
+    --color-3: #AC7088;
+}
+
+.titleWord4 {
+    --color-1: #2192FF;
+    --color-2: #ebb14c;
+    --color-3: #D58BDD;
+}
+
+.titleWord1 {
+    color: rgb(88, 83, 83);
+}
+  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+.code {
+    margin-top: 0;
+    margin-left: 60px;
+    position: absolute;
+}
+
+@media only screen and (min-width: 800px) {
+    .presentationContent {
+        background-color: rgba(111, 220, 191, 0.9);
+    }
+    .photoMarc {
+        border: 5px dashed hsl(210, 4%, 98%);
+    }
+    .imageHover {
+        border: 8px solid hsl(210, 4%, 98%);
+    }
+    .name  {
+        color: hsl(210, 4%, 98%);
+    }
+    .description {
+        font-size: 43px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .presentationContent {
+        flex-direction: row;
+        padding: 53px 80px 0 80px;
+    }
+    .descriptionContainer {
+        margin-left: 430px;
+    }
+    .photoMarc {
+        width: 333px;
+        height: 301px;
+        top: -114px;
+        left: 27px;
+    }
+    .imageHover {
+        width: 287px;
+        height: 257px;
+        top: -95px;
+        left: 47px;
+    }
+    .confetti {
+        top: 150px;
+        left: 100px;
+    }
+    .doubleConfetti {
+        bottom: 280px;
+        left: 740px;
+    }
+}

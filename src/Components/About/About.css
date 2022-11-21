@@ -1,0 +1,119 @@
+.aboutContent {
+    background-color: hsl(55, 97%, 85%);
+    padding: 60px 60px;
+}
+
+.aboutTitle {
+    font-family: 'Poller One', cursive;
+    color: hsl(0, 4%, 21%);
+    font-size: 43px;
+}
+
+.text {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 30px;
+}
+
+.content {
+    background-color: white;
+    border: 2px solid hsl(0, 4%, 21%);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.headerContent {
+    height: 34px;
+    border-bottom: 2px solid hsl(0, 4%, 21%);
+    display: flex;
+    align-items: center;
+}
+
+.headerCircleTechs {
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+    background-color:hsl(0, 4%, 21%);
+}
+
+.circle {
+    margin: 0 5px;
+}
+
+.circle1 {
+    margin-left: 20px;
+}
+
+.techTitle {
+    margin-top: -6px;
+    margin-bottom: 0px;
+    width: 0;
+    background-image: linear-gradient( white 50%, rgb(253, 216, 237) 50%);
+    transition: width 500ms ease;
+    background-size: 4px;
+}
+
+.descriptionContent {
+    margin: 15px 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.techs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aptitudTitle {
+    margin-bottom: 20px;
+}
+
+.textDescription {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+}
+
+.title {
+    margin-top: -6px;
+    width: 0;
+    background-image: linear-gradient( white 50%, rgb(253, 216, 237) 50%);
+    transition: width 500ms ease;
+    background-size: 4px;
+}
+.title:hover {
+    width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+    .content {
+        width: 67%;
+    }
+    .contentAptitud {
+        margin-left: 220px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .aboutContent {
+        padding: 60px 80px;
+    }
+    .content {
+        width: 53%;
+    }
+    .cardsAboutContent {
+        margin-left: 110px;
+    }
+    
+}
+
+@media only screen and (min-width: 1300px) {
+    .content {
+        width: 43%;
+    }  
+    .cardsAboutContent {
+        margin-left: 310px;
+    }
+}
