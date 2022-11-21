@@ -1,6 +1,5 @@
 import './About.css';
-import { DiReact, DiJavascript1, DiCss3, DiScrum, DiJira } from "react-icons/di";
-import { SiTypescript, SiTestinglibrary, SiHtml5 } from "react-icons/si";
+
 const About = () => {
     return (
         <div id="aboutme" className="aboutContent">

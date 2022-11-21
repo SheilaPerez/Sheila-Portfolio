@@ -1,11 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import './Work.css';
 
 const Work = () => {
+    const navigateTo = useNavigate()
+
     return (
         <div id="work" className="workContent">
             <h1 className="workTitle">My projects.</h1>
             <div className="works">
-                <div className="projectContent">
+                <div className="projectContent" onClick={ () => navigateTo("https://sp-advent.netlify.app/")}>
                     <div className={`${"advent"} ${"imageStyle"}`}></div>
                     <div className="explicationContent">
                         <p className="titleProject">advent calendar</p>
