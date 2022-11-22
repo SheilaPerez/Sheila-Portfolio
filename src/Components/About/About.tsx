@@ -4,13 +4,12 @@ const About = () => {
     return (
         <div id="aboutme" className="aboutContent">
             <h1 className="aboutTitle">About me.</h1>
-            <p className="text">The quick, brown fox jumps over a lazy dog.
-                DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps.
-                Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
-                Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.
-                Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim.
-                Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz.
-                How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz.
+            <p className="text">
+                I've always liked computer science and even though my dream was being a childhood education teacher
+                I've recently discovered that this is my passion too<br />
+                After years working with kids, I wanted to rebuild my professional career and the pandemic made that possible in so many ways.
+                Having a Frontend Architect, with me at home, has helped me to learn in a different way and learning some other things rather than what bootcamp gave me.
+                I'm eager to keep learning and join some team that allows me that.
             </p>
             <div className="cardsAboutContent">
                 <div className={`${"content"} ${"contentTech"} `}>

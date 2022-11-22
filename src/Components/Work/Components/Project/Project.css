@@ -1,0 +1,59 @@
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 211px;
+    margin-top: 20px;
+}
+
+.imageStyle {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+.imageStyle:hover{
+    animation: imageScale 0.2s linear forwards;
+}
+@keyframes imageScale {
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.explicationContent {
+    text-align: center;
+    width: 240px;
+}
+
+.titleProject {
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    font-size: 19px;
+}
+
+.descriptionProject {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 800px) {
+    .projectContent {
+        width: 313px;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    .projectContent {
+        width: 273px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .projectContent {
+        width: 256px;
+    }
+}
