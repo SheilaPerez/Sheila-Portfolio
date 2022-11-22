@@ -85,6 +85,12 @@
     z-index: 1;
 }
 
+@media only screen and (max-width: 500px) {
+    .icons {
+        flex-direction: column;
+    }
+}
+
 @media only screen and (max-width: 571px) {
     .iconDescriptionContent {
         margin-right: 0;
