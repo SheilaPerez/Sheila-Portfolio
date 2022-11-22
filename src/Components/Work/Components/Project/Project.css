@@ -36,7 +36,23 @@
 .descriptionProject {
     font-family: 'Kanit', sans-serif;
     font-size: 14px;
-    margin-top: 5px;
+    margin: 6px;
+}
+
+.flexGithub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitIcon {
+    margin: 0;
+}
+
+@media only screen and (max-width: 571px) {
+    .works {
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 800px) {

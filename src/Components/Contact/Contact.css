@@ -38,7 +38,6 @@
 .icons {
     display: flex;
     margin-top: 60px;
-    margin-left: 17px;
 }
 
 .iconStyle {
@@ -84,6 +83,16 @@
     transform: rotate(-25deg);
     bottom: -3px;
     z-index: 1;
+}
+
+@media only screen and (max-width: 571px) {
+    .iconDescriptionContent {
+        margin-right: 0;
+    }
+    .iconStyle {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
