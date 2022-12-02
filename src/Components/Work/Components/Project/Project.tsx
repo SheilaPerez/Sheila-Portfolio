@@ -7,9 +7,10 @@ interface Props {
     descriptionProject: string;
     techsDescription: string;
     projectStyle: string;
+    handleClickGitDireccion: (projectName: string) => void;
 }
 
-const Project: FC<Props> = ({handleClickOpenProject, projectName, descriptionProject, techsDescription, projectStyle}) => {
+const Project: FC<Props> = ({handleClickOpenProject, projectName, descriptionProject, techsDescription, projectStyle, handleClickGitDireccion}) => {
 
     return (
         <div className="projectContent" >
@@ -21,7 +22,7 @@ const Project: FC<Props> = ({handleClickOpenProject, projectName, descriptionPro
                 <p className="descriptionProject">{descriptionProject}</p>
                 <div className='flexGithub'>
                     <p className="descriptionProject">{techsDescription} </p>
-                    <p className='gitIcon'><FaGithub size={20} /></p>
+                    <div onClick={() => handleClickGitDireccion(projectName)} className='gitIcon'><FaGithub size={20} /></div>
                 </div>
             </div>
         </div>
