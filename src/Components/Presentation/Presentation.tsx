@@ -13,8 +13,16 @@ const Presentation = () => {
     return (
         <div className="presentationContent">
             <div className="photoContainer">
-                <div className="photoMarc"></div>
-                {hoverPic && <div className="imageHover"></div>}
+                {hoverPic ? <section>
+                                <span className="imageHover span"></span>
+                                <span className="imageHover span"></span>
+                                <span className="imageHover span"></span>
+                                <span className="imageHover span"></span>
+                            </section> 
+                          : <div>
+                                <div className="photoMarc"></div> 
+                                <div className="imageHover"></div>                        
+                            </div>}
                 {hoverConfetti && <div className="doubleConfetti"></div>}
             </div>
             <div className="descriptionContainer">

@@ -48,7 +48,7 @@ const About = () => {
                         <div className={`${"headerCircleTechs"} ${"circle"}`}></div>
                     </div>  
                     <div className={"descriptionContent"}>
-                        <h1 className={`${"title"} ${"aptitudTitle"}`}>Aptituds</h1>
+                        <h1 className={`${"title"} ${"aptitudTitle"}`}>Skills</h1>
                         <div>
                             <p className={"textDescription"}>Constant self-study</p>
                             <p className={"textDescription"}>Professionalism and responsibility</p>
