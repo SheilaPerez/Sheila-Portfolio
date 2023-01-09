@@ -57,22 +57,22 @@
 }
 
 .span:nth-child(1) {
-    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    clip-path: polygon(0 0, 53% 0, 53% 52%, 0 52%);
     animation: breakPhoto1 3s  ease
 
 }
 .span:nth-child(2) {
-    clip-path: polygon(100% 0, 50% 0, 50% 50%, 100% 50%);
+    clip-path: polygon(100% 0, 52% 0, 52% 52%, 100% 52%);
     animation: breakPhoto2 3s  ease
 
 }
 .span:nth-child(3) {
-    clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 100% 50%);
+    clip-path: polygon(100% 100%, 52% 100%, 52% 52%, 100% 52%);
     animation: breakPhoto3 3s  ease
 
 }
 .span:nth-child(4) {
-    clip-path: polygon(0 100%, 50% 100%, 50% 50%, 0 50%);
+    clip-path: polygon(0 100%, 53% 100%, 53% 52%, 0 52%);
     animation: breakPhoto4 3s  ease
 
 }
